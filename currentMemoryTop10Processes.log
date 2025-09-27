@@ -1,0 +1,1438 @@
+Last login: Sat Sep 27 18:49:39 on ttys008
+eirikhanasand@Eiriks-Macbook-Pro ~ % kubectl exec -it -n beekeeper beekeeper-api-5b46b4b6bd-65r8b -- sh
+/api # while true; do
+>   date +"%T %F"
+>   cat /sys/fs/cgroup/memory.current
+>   ps -o pid,user,rss,comm -A | sort -k3 -nr | head -n10
+>   sleep 5
+> done
+17:14:02 2025-09-27
+819154944
+320017 root     2956 psql
+311546 root     2776 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319867 root     1144 sh
+319870 root     1104 sh
+319896 root     1096 sh
+17:14:07 2025-09-27
+819507200
+320470 root     4608 psql
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319867 root     1144 sh
+319870 root     1104 sh
+319896 root     1100 sh
+17:14:12 2025-09-27
+844660736
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319867 root     1144 sh
+319870 root     1104 sh
+319896 root     1100 sh
+320959 root     1024 ps
+17:14:17 2025-09-27
+841469952
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319867 root     1144 sh
+319870 root     1104 sh
+319896 root     1092 sh
+321419 root      996 ps
+17:14:22 2025-09-27
+835641344
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319867 root     1144 sh
+319870 root     1104 sh
+319896 root     1100 sh
+321880 root     1016 ps
+17:14:27 2025-09-27
+821071872
+311546 root     2784 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322159 root      992 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:14:32 2025-09-27
+822788096
+311546 root     2784 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322165 root     1052 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:14:37 2025-09-27
+828493824
+311546 root     2784 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322171 root      976 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:14:42 2025-09-27
+832561152
+311546 root     2784 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322177 root     1020 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:14:47 2025-09-27
+837275648
+311546 root     2784 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322183 root     1012 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:14:52 2025-09-27
+839983104
+311546 root     2784 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322189 root     1040 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:14:57 2025-09-27
+844648448
+311546 root     2784 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322195 root      968 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:15:02 2025-09-27
+852590592
+322313 root     6764 psql
+322314 root     2920 psql
+311546 root     2784 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+322202 root     1140 sh
+319870 root     1104 sh
+17:15:07 2025-09-27
+873779200
+311546 root     2800 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+322202 root     1140 sh
+319870 root     1104 sh
+322227 root     1084 sh
+322200 root     1004 sh
+17:15:12 2025-09-27
+836558848
+322984 root     6224 psql
+323006 root     2920 psql
+311546 root     2800 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+322202 root     1140 sh
+319870 root     1104 sh
+17:15:17 2025-09-27
+872816640
+323656 root     5136 doctl
+311546 root     2828 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+322202 root     1140 sh
+319870 root     1104 sh
+322227 root     1088 sh
+17:15:22 2025-09-27
+848429056
+311546 root     2832 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+322202 root     1140 sh
+319870 root     1104 sh
+322227 root     1088 sh
+324225 root     1024 ps
+17:15:27 2025-09-27
+836231168
+325041 root     6828 psql
+311546 root     2832 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+322202 root     1140 sh
+319870 root     1104 sh
+322227 root     1084 sh
+17:15:32 2025-09-27
+957669376
+325717 root     6772 psql
+311546 root     2804 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+322202 root     1140 sh
+319870 root     1104 sh
+322227 root     1084 sh
+17:15:37 2025-09-27
+849362944
+326340 root     6372 psql
+311546 root     2804 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322200 root     1004 sh
+326343 root      968 ps
+17:15:42 2025-09-27
+848392192
+326793 root     6264 psql
+311546 root     2804 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+326796 root     1016 ps
+322200 root     1004 sh
+17:15:47 2025-09-27
+848629760
+327321 root     2980 psql
+311546 root     2804 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322200 root     1004 sh
+    1 root      960 init.sh
+17:15:52 2025-09-27
+865447936
+311546 root     2804 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+327815 root     1028 ps
+322200 root     1004 sh
+    1 root      960 init.sh
+17:15:57 2025-09-27
+850243584
+328298 root     2936 psql
+311546 root     2804 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+328301 root     1016 ps
+322200 root     1004 sh
+17:16:02 2025-09-27
+859889664
+311546 root     2804 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+328557 root     1084 sh
+328600 root     1008 sh
+322200 root     1004 sh
+17:16:07 2025-09-27
+860688384
+329531 root     6284 psql
+311546 root     2812 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+328557 root     1084 sh
+329547 root     1024 ps
+17:16:12 2025-09-27
+861749248
+311546 root     2804 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+328557 root     1084 sh
+328600 root     1008 sh
+322200 root     1004 sh
+17:16:17 2025-09-27
+867790848
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+328557 root     1084 sh
+328600 root     1012 sh
+322200 root     1004 sh
+17:16:22 2025-09-27
+878784512
+331742 root     5128 doctl
+311546 root     2808 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+328557 root     1084 sh
+331744 root     1032 ps
+17:16:27 2025-09-27
+852377600
+332578 root     6824 psql
+332568 root     6816 psql
+311546 root     2832 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+328557 root     1084 sh
+17:16:32 2025-09-27
+853778432
+333108 root     6708 psql
+311546 root     2828 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322200 root     1004 sh
+333111 root      996 ps
+17:16:37 2025-09-27
+858341376
+333594 root     6768 psql
+311546 root     2828 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+333597 root     1020 ps
+322200 root     1004 sh
+17:16:43 2025-09-27
+865112064
+311546 root     2828 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+334113 root     1032 ps
+322200 root     1004 sh
+334105 root      972 awk
+17:16:48 2025-09-27
+859013120
+311546 root     2828 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+334467 root     1044 ps
+322200 root     1004 sh
+    1 root      960 init.sh
+17:16:53 2025-09-27
+851312640
+311546 root     2808 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322200 root     1004 sh
+334949 root      996 ps
+    1 root      960 init.sh
+17:16:58 2025-09-27
+856612864
+335460 root     2912 psql
+311546 root     2808 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+322200 root     1004 sh
+    1 root      960 init.sh
+17:17:03 2025-09-27
+877469696
+336017 root     2924 psql
+311546 root     2808 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+335732 root     1128 sh
+319870 root     1104 sh
+335779 root     1040 sh
+17:17:08 2025-09-27
+878792704
+336755 root     6736 psql
+311546 root     2808 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+335732 root     1128 sh
+319870 root     1104 sh
+335779 root     1044 sh
+17:17:13 2025-09-27
+863678464
+337579 root     6776 psql
+311546 root     2808 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+335732 root     1128 sh
+319870 root     1104 sh
+335779 root     1040 sh
+17:17:18 2025-09-27
+863424512
+338155 root     6716 psql
+311546 root     2812 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+335732 root     1128 sh
+319870 root     1104 sh
+335779 root     1036 sh
+17:17:23 2025-09-27
+873660416
+311546 root     2808 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+335732 root     1128 sh
+319870 root     1104 sh
+335779 root     1044 sh
+    1 root      960 init.sh
+17:17:28 2025-09-27
+867831808
+311546 root     2792 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338853 root     1004 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:17:33 2025-09-27
+871493632
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338859 root      972 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:17:38 2025-09-27
+876072960
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338865 root     1052 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:17:43 2025-09-27
+884510720
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338871 root     1000 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:17:48 2025-09-27
+843370496
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+    1 root      960 init.sh
+338877 root      924 ps
+11857 root      888 crond
+17:17:53 2025-09-27
+853831680
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338883 root     1008 ps
+    1 root      960 init.sh
+11857 root      888 crond
+17:17:58 2025-09-27
+856281088
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+    1 root      960 init.sh
+338889 root      948 ps
+11857 root      888 crond
+17:18:03 2025-09-27
+870449152
+311546 root     2788 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338893 root     1084 sh
+338895 root     1068 sh
+339133 root      980 ps
+17:18:08 2025-09-27
+883384320
+339860 root     6820 psql
+311546 root     2820 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338893 root     1084 sh
+338895 root     1068 sh
+17:18:13 2025-09-27
+872476672
+340639 root     6792 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338893 root     1084 sh
+338895 root     1068 sh
+17:18:18 2025-09-27
+881065984
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338893 root     1084 sh
+338895 root     1068 sh
+339118 root     1004 sh
+17:18:23 2025-09-27
+896368640
+342237 root     6240 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+319870 root     1104 sh
+338893 root     1084 sh
+338895 root     1068 sh
+17:18:28 2025-09-27
+896311296
+311546 root     2876 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+343052 root     1056 awk
+17:18:33 2025-09-27
+871264256
+343522 root     3004 psql
+311546 root     2868 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+17:18:38 2025-09-27
+888492032
+344020 root     5132 doctl
+311546 root     2868 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+17:18:43 2025-09-27
+866603008
+311546 root     2836 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+339118 root     1004 sh
+17:18:48 2025-09-27
+875216896
+311546 root     2836 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+339118 root     1004 sh
+17:18:53 2025-09-27
+886693888
+311546 root     2832 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+345401 root     1032 awk
+17:18:58 2025-09-27
+888668160
+311546 root     2832 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+339118 root     1004 sh
+17:19:03 2025-09-27
+926154752
+311546 root     2832 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+346216 root     1136 sh
+319870 root     1104 sh
+338893 root     1084 sh
+17:19:08 2025-09-27
+905281536
+347338 root     6752 psql
+311546 root     2832 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+346216 root     1136 sh
+319870 root     1104 sh
+17:19:13 2025-09-27
+909463552
+348154 root     6776 psql
+348128 root     6732 psql
+311546 root     2840 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+346216 root     1136 sh
+17:19:18 2025-09-27
+912883712
+348975 root     6496 psql
+348976 root     2908 psql
+311546 root     2840 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+346216 root     1136 sh
+17:19:23 2025-09-27
+945827840
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+346216 root     1136 sh
+319870 root     1104 sh
+346250 root     1084 sh
+17:19:28 2025-09-27
+910565376
+350518 root     6728 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+17:19:33 2025-09-27
+898965504
+350926 root     8112 kubectl
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+17:19:38 2025-09-27
+910000128
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+347996 root     1004 sh
+17:19:43 2025-09-27
+909721600
+351894 root     6804 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+17:19:48 2025-09-27
+910581760
+352414 root     6828 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+17:19:53 2025-09-27
+930414592
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+338893 root     1084 sh
+352863 root     1004 ps
+17:19:58 2025-09-27
+913899520
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+353014 root     1052 ps
+    1 root      960 init.sh
+17:20:03 2025-09-27
+922435584
+353135 root     6772 psql
+353161 root     3000 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+353020 root     1132 sh
+17:20:08 2025-09-27
+916267008
+353542 root     5752 kubectl
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+353020 root     1132 sh
+319870 root     1104 sh
+17:20:13 2025-09-27
+916680704
+354013 root     6712 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+353020 root     1132 sh
+319870 root     1104 sh
+17:20:18 2025-09-27
+925114368
+354655 root     6768 psql
+354681 root     6376 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+353020 root     1132 sh
+17:20:23 2025-09-27
+929366016
+355397 root     6812 psql
+355414 root     6284 psql
+311546 root     2832 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+353020 root     1132 sh
+17:20:28 2025-09-27
+948862976
+356218 root     9592 doctl
+356204 root     6756 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+353020 root     1132 sh
+17:20:33 2025-09-27
+929333248
+356790 root     2960 psql
+311546 root     2848 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+353020 root     1132 sh
+319870 root     1104 sh
+17:20:38 2025-09-27
+910598144
+311546 root     2848 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+357229 root     1052 awk
+353018 root     1008 sh
+17:20:43 2025-09-27
+916451328
+311546 root     2848 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+353018 root     1008 sh
+357621 root      996 ps
+17:20:48 2025-09-27
+914714624
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+353018 root     1008 sh
+357938 root      960 ps
+17:20:53 2025-09-27
+901296128
+358306 root     6744 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+353018 root     1008 sh
+17:20:58 2025-09-27
+909062144
+358749 root     6740 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+353018 root     1008 sh
+17:21:03 2025-09-27
+937570304
+359308 root     6732 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+359006 root     1100 sh
+17:21:08 2025-09-27
+940642304
+359840 root     6792 psql
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+359006 root     1100 sh
+17:21:13 2025-09-27
+954212352
+311546 root     2824 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+359006 root     1100 sh
+359049 root     1044 sh
+17:21:18 2025-09-27
+920723456
+361209 root     6764 psql
+361220 root     6200 psql
+311546 root     2844 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+17:21:23 2025-09-27
+940515328
+311546 root     2844 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+359006 root     1100 sh
+359049 root     1040 sh
+17:21:28 2025-09-27
+944070656
+311546 root     2844 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+359006 root     1100 sh
+359049 root     1044 sh
+17:21:33 2025-09-27
+937811968
+363506 root     6768 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+359006 root     1100 sh
+17:21:38 2025-09-27
+921251840
+363839 root     2928 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+363842 root     1016 ps
+17:21:43 2025-09-27
+942923776
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+353018 root     1008 sh
+364281 root      968 awk
+17:21:48 2025-09-27
+930078720
+364790 root     6696 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+353018 root     1008 sh
+17:21:53 2025-09-27
+933797888
+365286 root     6808 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+353018 root     1008 sh
+17:21:58 2025-09-27
+951328768
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+365764 root     1032 ps
+353018 root     1008 sh
+17:22:03 2025-09-27
+951775232
+366350 root     3008 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+365981 root     1144 sh
+319870 root     1104 sh
+17:22:08 2025-09-27
+955805696
+366951 root     6764 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+365981 root     1144 sh
+319870 root     1104 sh
+17:22:13 2025-09-27
+944357376
+367612 root     6732 psql
+367597 root     6732 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+365981 root     1144 sh
+17:22:18 2025-09-27
+965607424
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+365981 root     1144 sh
+319870 root     1104 sh
+366024 root     1092 sh
+17:22:23 2025-09-27
+967258112
+369034 root     2976 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+365981 root     1144 sh
+319870 root     1104 sh
+17:22:28 2025-09-27
+941813760
+369492 root     6708 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+365981 root     1144 sh
+319870 root     1104 sh
+17:22:33 2025-09-27
+946749440
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369693 root      984 ps
+    1 root      960 init.sh
+17:22:38 2025-09-27
+954490880
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369699 root     1036 ps
+    1 root      960 init.sh
+17:22:43 2025-09-27
+947367936
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369705 root     1004 ps
+    1 root      960 init.sh
+17:22:49 2025-09-27
+953409536
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369711 root     1040 ps
+    1 root      960 init.sh
+17:22:54 2025-09-27
+963784704
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369717 root     1036 ps
+    1 root      960 init.sh
+17:22:59 2025-09-27
+955117568
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369723 root      992 ps
+    1 root      960 init.sh
+17:23:04 2025-09-27
+970223616
+370169 root     6744 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+369729 root     1180 sh
+319870 root     1104 sh
+17:23:09 2025-09-27
+990572544
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+369729 root     1180 sh
+319870 root     1104 sh
+369753 root     1080 sh
+17:23:14 2025-09-27
+993148928
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+369729 root     1180 sh
+319870 root     1104 sh
+369753 root     1076 sh
+17:23:19 2025-09-27
+967671808
+372154 root     6808 psql
+372176 root     4812 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+369729 root     1180 sh
+17:23:24 2025-09-27
+972505088
+372768 root     6760 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+369729 root     1180 sh
+319870 root     1104 sh
+17:23:29 2025-09-27
+991084544
+373562 root     6192 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+369729 root     1180 sh
+319870 root     1104 sh
+17:23:34 2025-09-27
+975003648
+374068 root     6712 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369727 root     1012 sh
+17:23:39 2025-09-27
+977489920
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369727 root     1012 sh
+374475 root     1000 ps
+17:23:44 2025-09-27
+975269888
+374894 root     2964 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369727 root     1012 sh
+17:23:49 2025-09-27
+979054592
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+375252 root     1012 ps
+369727 root     1012 sh
+17:23:54 2025-09-27
+984432640
+375515 root     2928 psql
+311546 root     2852 htop
+10307 root     1280 sh
+174270 root     1256 sh
+ 5651 root     1248 sh
+83570 root     1204 sh
+30460 root     1188 sh
+342292 root     1184 sh
+319870 root     1104 sh
+369727 root     1012 sh
+command terminated with exit code 137
+eirikhanasand@Eiriks-Macbook-Pro ~ % 
