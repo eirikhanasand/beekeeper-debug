@@ -1,3 +1,29 @@
+## Flow chart
+
+```
+                ┌───────────────────┐
+                │   Kubernetes Pod  │
+                │ (Docker Container)│
+                └─────────┬─────────┘
+                          │
+          ┌───────────────┴───────────────┐
+          │                               │
+ ┌────────▼─────────┐            ┌────────▼─────────┐
+ │ Cron Job (1/min) │            │ Fastify API       │
+ │ Process Data     │            │ - Serves API      │
+ │ - Reads data     │            │ - Caches 10 pages │
+ │ - Writes to PSQL │            │   per namespace   │
+ └────────┬─────────┘            │   per context     │
+          │                      └────────┬─────────┘
+          │                               │
+          │                               │
+          ▼                               ▼
+   ┌───────────────┐                ┌─────────────┐
+   │ PostgreSQL DB │                │ In-memory   │
+   │               │                │ Cache       │
+   └───────────────┘                └─────────────┘
+```
+
 ## api.log
 ```
 while true; do
